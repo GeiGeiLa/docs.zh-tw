@@ -23,7 +23,7 @@ ms.locfileid: "43387252"
 ## <a name="remarks"></a>備註  
   
 > [!NOTE]
->  如果常數值通常是在 C 和 C++ 中進行宣告，您就不能使用 `#define` 指示詞進行宣告。 在 C# 中的常數是特別定義為類別或結構的靜態成員。 如果您有數個這類常數，請考慮建立個別的「常數」類別來保留它們。  
+>  您不能使用 `#define` 指示詞宣告常數值，因為只有在 C 和 C++ 才能這麼做。 在 C# 中將常數定義為類別或結構的靜態成員是最好的做法。 如果您有數個這類常數，請考慮建立個別的「常數」類別來保留它們。  
   
  符號可以用來指定編譯的條件。 您可以使用 [#if](../../../csharp/language-reference/preprocessor-directives/preprocessor-if.md) 或 [#elif](../../../csharp/language-reference/preprocessor-directives/preprocessor-elif.md) 來測試符號。 您也可以使用 <xref:System.Diagnostics.ConditionalAttribute> 執行條件式編譯。  
   
